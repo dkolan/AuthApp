@@ -1,8 +1,8 @@
 //
-//  LoginView.swift
+//  CreateUserView.swift
 //  AuthApp
 //
-//  Created by Dan Kolan on 3/29/23.
+//  Created by Dan Kolan on 3/30/23.
 //
 
 import SwiftUI
@@ -12,7 +12,7 @@ private enum FocusableField: Hashable {
   case password
 }
 
-struct LoginView: View {
+struct CreateUserView: View {
     @State var email = ""
     @State var password = ""
 
@@ -43,29 +43,21 @@ struct LoginView: View {
                 if email.isEmpty || password.isEmpty {
                     return
                 }
-                authViewModel.signIn(email: email, password: password)
+                authViewModel.signUp(email: email, password: password)
             } label: {
-                Text("Log In")
-                    .foregroundColor(Color.white)
-                    .frame(maxWidth: .infinity, maxHeight: 50)
-                    .background(Color.accentColor)
-            }
-            NavigationLink {
-                CreateUserView()
-            } label: {
-                Text("Create a User")
+                Text("Create User")
                     .foregroundColor(Color.white)
                     .frame(maxWidth: .infinity, maxHeight: 50)
                     .background(Color.accentColor)
             }
         }
         .padding()
-        .navigationTitle("Log In")
+        .navigationTitle("Create an Account")
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
+struct CreateUserView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        CreateUserView()
     }
 }

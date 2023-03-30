@@ -34,5 +34,8 @@ class AuthViewModel: ObservableObject {
 
     func signOut() {
         try? auth.signOut()
+
+        self.isSignedIn = false
+        print("signed out")
     }
 }

@@ -15,7 +15,7 @@ struct AuthView: View {
     var body: some View {
         NavigationView {
             if authViewModel.isSignedIn {
-                Text("Signed in.")
+                WelcomeView()
             } else {
                 LoginView()
             }

@@ -16,6 +16,7 @@
 		4261691F29D53E8E0069536F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4261691E29D53E8E0069536F /* FirebaseAuth */; };
 		4261692129D540510069536F /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4261692029D540510069536F /* AuthViewModel.swift */; };
 		4261692329D544150069536F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4261692229D544150069536F /* LoginView.swift */; };
+		4261692529D5587B0069536F /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4261692429D5587B0069536F /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		4261691929D53E510069536F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4261692029D540510069536F /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		4261692229D544150069536F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4261692429D5587B0069536F /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				4261692029D540510069536F /* AuthViewModel.swift */,
 				4261690D29D537590069536F /* AuthView.swift */,
 				4261692229D544150069536F /* LoginView.swift */,
+				4261692429D5587B0069536F /* WelcomeView.swift */,
 				4261690F29D5375A0069536F /* Assets.xcassets */,
 				4261691929D53E510069536F /* GoogleService-Info.plist */,
 				4261691129D5375A0069536F /* Preview Content */,
@@ -158,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4261692529D5587B0069536F /* WelcomeView.swift in Sources */,
 				4261690E29D537590069536F /* AuthView.swift in Sources */,
 				4261690C29D537590069536F /* AuthAppApp.swift in Sources */,
 				4261692329D544150069536F /* LoginView.swift in Sources */,

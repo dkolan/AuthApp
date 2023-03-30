@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct AuthView: View {
     
@@ -13,7 +14,14 @@ struct AuthView: View {
     
     var body: some View {
         NavigationView {
-            LoginView()
+            if authViewModel.isSignedIn {
+                Text("Signed in.")
+            } else {
+                LoginView()
+            }
+        }
+        .onAppear {
+            authViewModel.isSignedIn = Auth.auth().currentUser != nil
         }
     }
 }

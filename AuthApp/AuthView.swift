@@ -10,7 +10,7 @@ import FirebaseAuth
 
 struct AuthView: View {
     
-    @ObservedObject var authViewModel = AuthViewModel()
+    @EnvironmentObject var authViewModel: AuthViewModel
     
     var body: some View {
         NavigationView {

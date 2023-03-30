@@ -22,8 +22,10 @@ struct AuthAppApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
 
     var body: some Scene {
+        let authViewModel = AuthViewModel()
         WindowGroup {
             AuthView()
+                .environmentObject(authViewModel)
         }
     }
 }

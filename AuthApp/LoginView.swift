@@ -16,7 +16,7 @@ struct LoginView: View {
     @State var email = ""
     @State var password = ""
 
-    @ObservedObject var authViewModel = AuthViewModel()
+    @EnvironmentObject var authViewModel: AuthViewModel
 
     @FocusState private var focus: FocusableField?
 

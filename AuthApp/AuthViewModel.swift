@@ -18,7 +18,6 @@ class AuthViewModel: ObservableObject {
                 return
             }
             self?.isSignedIn = true
-            print("\(authResult?.user.email) logged in")
         }
     }
 
@@ -28,7 +27,6 @@ class AuthViewModel: ObservableObject {
                 return
             }
             self?.isSignedIn = true
-            print("\(authResult?.user.email) logged in")
         }
     }
 
@@ -36,6 +34,5 @@ class AuthViewModel: ObservableObject {
         try? auth.signOut()
 
         self.isSignedIn = false
-        print("signed out")
     }
 }
